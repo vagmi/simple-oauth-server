@@ -1,0 +1,15 @@
+doctype
+html
+  head
+    title Authorize
+    body
+      h1 Authorize
+      p Authorize client (thom) to your account?
+      form(action="" method="post")
+        input(type="hidden" name="client_id" value="thom")
+        input(type="hidden" name="client_secret" value="nightworld")
+        input(type="hidden" name="redirect_uri" value="http://oauthclient:4000/")
+        input(type="hidden" name="referer" value="http://oauthclient:4000/")
+        input(type="hidden" name="response_type" value="token")
+        input(type="hidden" name="allowed" value="yes")
+        button(type="submit") Allow
