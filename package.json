@@ -9,21 +9,26 @@
     "cookie-session": "~1.0.2",
     "method-override": "~2.0.2",
     "express": "~4.4.3",
-    "bcrypt": "^0.7.7",
+    "bcrypt": "~0.7.8",
     "knex": "^0.6.16",
     "pg": "^3.3.0",
-    "jade": "*"
+    "jade": "*",
+    "redis": "~0.10.3",
+    "hiredis": "~0.1.17",
+    "lodash": "~2.4.1",
+    "node-uuid": "~1.4.1"
   },
   "devDependencies": {
     "mocha": "~1.20.1",
     "should": "~4.0.4",
     "supertest": "~0.13.0",
-    "nodemon": "^1.0.15"
+    "nodemon": "^1.0.15",
+    "chai": "~1.9.1"
   },
   "engines": {
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/*"
   }
 }
