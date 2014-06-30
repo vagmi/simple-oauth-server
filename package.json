@@ -23,12 +23,13 @@
     "should": "~4.0.4",
     "supertest": "~0.13.0",
     "nodemon": "^1.0.15",
-    "chai": "~1.9.1"
+    "chai": "~1.9.1",
+    "istanbul": "~0.2.13"
   },
   "engines": {
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha test/*"
+    "test": "istanbul cover node_modules/.bin/_mocha -- -u exports -R spec --recursive test/*"
   }
 }
